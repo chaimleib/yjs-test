@@ -1,0 +1,20 @@
+{
+  "name": "yjs-test",
+  "version": "1.0.0",
+  "description": "Node server for collaborative text editing",
+  "main": "index.js",
+  "repository": "https://github.com/chaimleib/yjs-test",
+  "author": "Chaim Halbert <chaim.leib.halbert@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "fuse-box": "^3.7.0",
+    "terser": "^3.16.1",
+    "typescript": "^3.3.3",
+    "uglify-js": "^3.4.9"
+  }
+}
