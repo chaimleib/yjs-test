@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "fuse-box": "^3.7.0",
+    "node-sass": "^4.11.0",
     "terser": "^3.16.1",
     "typescript": "^3.3.3",
     "uglify-js": "^3.4.9"

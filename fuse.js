@@ -16,28 +16,18 @@ const fuse = FuseBox.init({
   useTypescriptCompiler: true,
   plugins: [
     WebIndexPlugin(),
-    // [
-    //   SassPlugin(),
-    //   CSSResourcePlugin({ dist: 'dist/css-resources' }),
-    //   CSSPlugin(),
-    // ],
+    [
+      SassPlugin(),
+      CSSResourcePlugin({ dist: 'dist/css-resources' }),
+      CSSPlugin(),
+    ],
   ],
 });
 
 const serverOptions = {
-  // fallback: '404.html',
   port: 8078,
 };
-fuse.dev(serverOptions) //, server => {
-  // const dist = path.resolve('./dist');
-  // const app = server.httpServer.app;
-  // static files
-  // app.use('/js/', express.static(path.join(dist, 'js')));
-  // dynamic endpoints
-  // app.get('*', (req, res) => {
-  //   res.sendFile(path.join(dist, 'index.html'));
-  // });
-// });
+fuse.dev(serverOptions);
 fuse
   .bundle('app')
   .instructions(' > app.jsx')
