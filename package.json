@@ -7,13 +7,17 @@
   "author": "Chaim Halbert <chaim.leib.halbert@gmail.com>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "./fuse.js"
+  },
   "dependencies": {
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1"
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
   },
   "devDependencies": {
-    "fuse-box": "^3.7.0",
+    "fuse-box": "^3.7.1",
     "node-sass": "^4.11.0",
+    "socket.io": "^2.2.0",
     "terser": "^3.16.1",
     "typescript": "^3.3.3",
     "uglify-js": "^3.4.9"
